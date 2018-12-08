@@ -181,6 +181,7 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 #contact-form li {
@@ -215,4 +216,76 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .auth-image {
+    height: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    clear: both;
+  }
+
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0;
+    overflow: auto;
+    color: #ffffff;
+    background: #fff;
+    border-bottom: 2px solid #cccccc;
+  }
+  #logo {
+    display: block;
+    float: none;
+    width: 100%;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  
+  nav {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  #main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+  }
+
+  .container {
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+  
+  .main-section {
+    margin-top: 60px;
+  }
+
+  .auth-image {
+    float: none;
+    width: 100%;
+  }
 }
